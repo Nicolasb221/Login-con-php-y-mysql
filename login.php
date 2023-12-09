@@ -1,6 +1,8 @@
 <?php
     session_start();
-
+    if (isset($_SESSION["user_id"])) {
+        header('Location: /Login con php y mysql');
+    }
     require 'database.php';
     if (!empty($_POST['email']) && !empty($_POST['password'])){
         $records = $conn->prepare('SELECT id, email, password FROM users WHERE email=:email');

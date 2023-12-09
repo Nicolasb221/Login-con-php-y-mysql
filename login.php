@@ -38,7 +38,6 @@
         <p><?= $message ?></p>
     <?php endif;?>
 
-
     <form action="login.php" method="post">
         <input type="text" name="email" placeholder="Ingrese su email">
         <input type="password" name="password" placeholder="Ingrese su contraseña">
